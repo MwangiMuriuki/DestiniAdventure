@@ -13,6 +13,7 @@
 		7102CC3423FFDA5400AE9C82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7102CC3223FFDA5400AE9C82 /* Main.storyboard */; };
 		7102CC3623FFDA6000AE9C82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7102CC3523FFDA6000AE9C82 /* Assets.xcassets */; };
 		7102CC3923FFDA6000AE9C82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7102CC3723FFDA6000AE9C82 /* LaunchScreen.storyboard */; };
+		7102CC46240003B700AE9C82 /* IntroQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7102CC45240003B700AE9C82 /* IntroQuestions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		7102CC3523FFDA6000AE9C82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7102CC3823FFDA6000AE9C82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7102CC3A23FFDA6000AE9C82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7102CC45240003B700AE9C82 /* IntroQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroQuestions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,48 @@
 		7102CC2B23FFDA5400AE9C82 /* Destini */ = {
 			isa = PBXGroup;
 			children = (
-				7102CC2C23FFDA5400AE9C82 /* AppDelegate.swift */,
+				7102CC4323FFDCAD00AE9C82 /* Supporting Documents */,
+				7102CC4223FFDC9D00AE9C82 /* Controllers */,
+				7102CC4123FFDC8F00AE9C82 /* View */,
+				7102CC4023FFDC8700AE9C82 /* Models */,
 				7102CC2E23FFDA5400AE9C82 /* SceneDelegate.swift */,
-				7102CC3023FFDA5400AE9C82 /* ViewController.swift */,
-				7102CC3223FFDA5400AE9C82 /* Main.storyboard */,
-				7102CC3523FFDA6000AE9C82 /* Assets.xcassets */,
-				7102CC3723FFDA6000AE9C82 /* LaunchScreen.storyboard */,
-				7102CC3A23FFDA6000AE9C82 /* Info.plist */,
 			);
 			path = Destini;
+			sourceTree = "<group>";
+		};
+		7102CC4023FFDC8700AE9C82 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7102CC45240003B700AE9C82 /* IntroQuestions.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7102CC4123FFDC8F00AE9C82 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7102CC3523FFDA6000AE9C82 /* Assets.xcassets */,
+				7102CC3223FFDA5400AE9C82 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7102CC4223FFDC9D00AE9C82 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7102CC2C23FFDA5400AE9C82 /* AppDelegate.swift */,
+				7102CC3023FFDA5400AE9C82 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7102CC4323FFDCAD00AE9C82 /* Supporting Documents */ = {
+			isa = PBXGroup;
+			children = (
+				7102CC3A23FFDA6000AE9C82 /* Info.plist */,
+				7102CC3723FFDA6000AE9C82 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Documents";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +175,7 @@
 			files = (
 				7102CC3123FFDA5400AE9C82 /* ViewController.swift in Sources */,
 				7102CC2D23FFDA5400AE9C82 /* AppDelegate.swift in Sources */,
+				7102CC46240003B700AE9C82 /* IntroQuestions.swift in Sources */,
 				7102CC2F23FFDA5400AE9C82 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,7 +322,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H7NFHG83A7;
-				INFOPLIST_FILE = Destini/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Destini/Supporting Documents/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +340,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H7NFHG83A7;
-				INFOPLIST_FILE = Destini/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Destini/Supporting Documents/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
