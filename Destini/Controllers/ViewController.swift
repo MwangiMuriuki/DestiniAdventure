@@ -11,39 +11,42 @@ import UIKit
 class ViewController: UIViewController {
     
     let allStories = StoryBank()
-    var questionNumber: Int = 0
-
+    var storyNumber: Int = 0
+   
     @IBOutlet weak var questionLabel: UILabel!
+    @IBOutlet weak var topButton: UIButton!
+    @IBOutlet weak var bottomButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
-        let initialQsn = allStories.storyList[questionNumber]
-        questionLabel.text = (initialQsn.introStory)
+      
+        setFirstQuestion()
         
     }
 
     @IBAction func selectAnswerButton(_ sender: UIButton) {
         
         if (sender.tag == 1){
-            print("Red button Clicked")
+            print("Top button Clicked")
+            
         }else{
             
-            print("Blue button Clicked")
+            print("Bottom button Clicked")
         }
+        
         
     }
     
     func setFirstQuestion(){
         
+        let initialQsn = allStories.storyList[storyNumber]
+        questionLabel.text = (initialQsn.introStory)
+        topButton.setTitle(initialQsn.introAnsA, for: .normal)
+        bottomButton.setTitle(initialQsn.introAnsB, for: .normal)
         
     }
+ 
     
-    func setButtonText(){
-        
-        
-    }
     
 }
 

@@ -45,13 +45,13 @@
                                                 <rect key="frame" x="8" y="19.999999999999986" width="359" height="253.66666666666663"/>
                                                 <subviews>
                                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ElB-81-NUb">
-                                                        <rect key="frame" x="20" y="93.666666666666686" width="319" height="40"/>
+                                                        <rect key="frame" x="5" y="93.666666666666686" width="349" height="40"/>
                                                         <color key="backgroundColor" red="0.75093194799999996" green="0.1746559379" blue="0.14652373369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="DlU-A1-DtS"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
-                                                        <state key="normal" title="I`ll hop in. Thanks for the help!">
+                                                        <state key="normal" title="Top Button">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
@@ -59,13 +59,13 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gsi-ch-M4r">
-                                                        <rect key="frame" x="20" y="173.66666666666669" width="319" height="40"/>
+                                                        <rect key="frame" x="5" y="173.66666666666669" width="349" height="40"/>
                                                         <color key="backgroundColor" red="0.23729115798374181" green="0.58613701201714319" blue="0.86696938451776651" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="DND-YO-QNB"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
-                                                        <state key="normal" title="Better ask him if he`s a murderer first.">
+                                                        <state key="normal" title="Bottom Button">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
@@ -74,11 +74,11 @@
                                                     </button>
                                                 </subviews>
                                                 <constraints>
-                                                    <constraint firstItem="Gsi-ch-M4r" firstAttribute="leading" secondItem="C6J-dq-dJm" secondAttribute="leading" constant="20" id="1k1-fK-ajK"/>
+                                                    <constraint firstItem="Gsi-ch-M4r" firstAttribute="leading" secondItem="C6J-dq-dJm" secondAttribute="leading" constant="5" id="1k1-fK-ajK"/>
                                                     <constraint firstAttribute="bottom" secondItem="Gsi-ch-M4r" secondAttribute="bottom" constant="40" id="OHI-eR-cho"/>
-                                                    <constraint firstAttribute="trailing" secondItem="Gsi-ch-M4r" secondAttribute="trailing" constant="20" id="cmf-80-XwF"/>
-                                                    <constraint firstAttribute="trailing" secondItem="ElB-81-NUb" secondAttribute="trailing" constant="20" id="mFX-tJ-iII"/>
-                                                    <constraint firstItem="ElB-81-NUb" firstAttribute="leading" secondItem="C6J-dq-dJm" secondAttribute="leading" constant="20" id="qRj-7F-4Gm"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Gsi-ch-M4r" secondAttribute="trailing" constant="5" id="cmf-80-XwF"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ElB-81-NUb" secondAttribute="trailing" constant="5" id="mFX-tJ-iII"/>
+                                                    <constraint firstItem="ElB-81-NUb" firstAttribute="leading" secondItem="C6J-dq-dJm" secondAttribute="leading" constant="5" id="qRj-7F-4Gm"/>
                                                     <constraint firstItem="Gsi-ch-M4r" firstAttribute="top" secondItem="ElB-81-NUb" secondAttribute="bottom" constant="40" id="uK6-Gl-Odw"/>
                                                 </constraints>
                                             </view>
@@ -116,7 +116,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="bottomButton" destination="Gsi-ch-M4r" id="DVs-kH-Quj"/>
                         <outlet property="questionLabel" destination="OTL-sl-emH" id="6Dt-g3-WfG"/>
+                        <outlet property="topButton" destination="ElB-81-NUb" id="Tc6-uk-skr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
