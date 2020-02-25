@@ -10,13 +10,15 @@ import Foundation
 
 
 class IntroQuestions{
-    let introQsn: String
-    let introAns: Bool
+    let introStory: String
+    let introAnsA: String
+    let introAnsB: String
     
-    init(text: String, correctAnswer: Bool) {
+    init(storyText: String, storyAnswerA: String, storyAnswerB: String) {
         
-        introQsn = text
-        introAns = correctAnswer
+        introStory = storyText
+        introAnsA = storyAnswerA
+        introAnsB = storyAnswerB
     }
     
 }

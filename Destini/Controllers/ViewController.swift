@@ -9,14 +9,18 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    let allStories = StoryBank()
+    var questionNumber: Int = 0
 
     @IBOutlet weak var questionLabel: UILabel!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        let initialQsn = allStories.storyList[questionNumber]
+        questionLabel.text = (initialQsn.introStory)
         
     }
 
